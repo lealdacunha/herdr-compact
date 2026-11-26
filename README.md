@@ -2,7 +2,7 @@
 
 A compact, see-through layout for [Herdr](https://herdr.dev). No title bar, no tab bar and no pane headers: one slim sidebar holds your spaces, the current space's tabs and your agents, with a single row of icons at the bottom. Everything else is terminal, and the desktop shows through softly blurred.
 
-![Compact](preview.png)
+![Compact](preview.png?v=2)
 
 ## What's in it
 

@@ -18,7 +18,7 @@
               "id": "spaces",
               "type": "block",
               "content": {
-                "mod": "ldc-spaces"
+                "mod": "compact-spaces"
               },
               "size": {
                 "weight": 1
@@ -29,7 +29,7 @@
               "id": "sidetabs",
               "type": "block",
               "content": {
-                "mod": "ldc-tabs",
+                "mod": "compact-tabs",
                 "props": {
                   "vertical": true
                 }
@@ -43,7 +43,7 @@
               "id": "agents",
               "type": "block",
               "content": {
-                "mod": "ldc-agents"
+                "mod": "compact-agents"
               },
               "size": {
                 "weight": 1
@@ -56,7 +56,7 @@
           "id": "sidebar-footer",
           "type": "block",
           "content": {
-            "mod": "ldc-chrome",
+            "mod": "compact-chrome",
             "props": {
               "footer": true
             }

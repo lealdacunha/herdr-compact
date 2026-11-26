@@ -1,8 +1,8 @@
-# ldc
+# Compact
 
 A compact, see-through Herdr window with no title bar and no tab bar. One narrow sidebar holds three stacked lists (spaces, the current space's tabs, agents) and a single row of icons at the bottom; everything else is terminal. The desktop shows through the window, softly blurred, so a dark wallpaper reads as faint light behind the text.
 
-![ldc](preview.png)
+![Compact](preview.png)
 
 ## What you see
 
@@ -32,10 +32,10 @@ Popups and the command palette are solid black (`popover` `#000000`) with key la
 - Root: `titlebar: "none"`, `traffic_lights: [-200, -200]` (pushes macOS's window buttons off the window), `window_blur: true`, `terminal_opacity: 0.425`, `background: "canvas"`, and the `colors` above, with `background`, `canvas` and `surface` all `#00000000`.
 - `main`'s pane frame: `background: "canvas"`, `border`/`focus` `{ width: 1, color: "border" }`, `radius: 0`, `gap: 0`, no `header`.
 - Mods, each cloned from a shipped 0.1.18 mod:
-  - `ldc-spaces` (from `spaces`): no heading row; rows 36px; larger text and avatar. Runs `git` for branch info and offers `hc machine login` for remote machines, like the shipped mod.
-  - `ldc-tabs` (from `tabs`), with `props.vertical: true`: a vertical list in the sidebar; also runs `syncPanel` so the side panel stays per-space. Its horizontal mode is unused here.
-  - `ldc-agents` (from `agents`): no heading row; two-line rows; `#N` after the name; group headings dropped when there is one group; calls `setAgentOrder`.
-  - `ldc-chrome` (from `workspace-chrome`), with `props.footer: true`: the icon row; adds `square-plus.svg`. Collapsing goes to 44px since no window buttons need room.
+  - `compact-spaces` (from `spaces`): no heading row; rows 36px; larger text and avatar. Runs `git` for branch info and offers `hc machine login` for remote machines, like the shipped mod.
+  - `compact-tabs` (from `tabs`), with `props.vertical: true`: a vertical list in the sidebar; also runs `syncPanel` so the side panel stays per-space. Its horizontal mode is unused here.
+  - `compact-agents` (from `agents`): no heading row; two-line rows; `#N` after the name; group headings dropped when there is one group; calls `setAgentOrder`.
+  - `compact-chrome` (from `workspace-chrome`), with `props.footer: true`: the icon row; adds `square-plus.svg`. Collapsing goes to 44px since no window buttons need room.
 - Shipped mods used as-is: `files`, `changes`, `workspace-status`, `new-menu`, `menu`, `picker`. Icons come from `mods/workspace-chrome/`, `mods/pane/` and `mods/files/`.
 
 ## Watch out

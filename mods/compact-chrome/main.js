@@ -36,7 +36,7 @@ export default class WorkspaceChrome extends View {
       const icon = (id, name, label, action, on = false) => div().id(id).size(24).flex_none().flex().items_center().justify_center().relative().rounded(6)
         .text_color(on ? t.foreground : t.muted).when(on, el => el.bg(t.selected)).hover(s => s.bg(t.hover).text_color(t.foreground)).cursor_pointer().tooltip(label)
         .on_mouse_down("left", (_e, cx) => cx.stop_propagation())
-        .on_click(action).child(svg(`mods/ldc-chrome/${name}.svg`).size(15));
+        .on_click(action).child(svg(`mods/compact-chrome/${name}.svg`).size(15));
       const root = layout(), panel = find(root, "panel"), body = find(root, "panel-body");
       const enabled = shared("workspace.panels") ?? ["files", "changes"];
       const panelIcon = (id, name, label) => {
@@ -57,7 +57,7 @@ export default class WorkspaceChrome extends View {
           .when(enabled.includes("files"), el => el.child(panelIcon("files", "files", "Files")))
           .when(enabled.includes("changes"), el => el.child(panelIcon("changes", "git-compare", "Changes")))
           .child(icon("ag-sort", shared("agents.sort") === "grouped" ? "layers" : "clock", `Sort agents: ${shared("agents.sort") === "grouped" ? "Grouped by space" : "Priority"}`,
-            () => openOverlay({ mod: "ldc-agents", kind: "popup", width: 200, height: 140, props: { sortMenu: true } })))
+            () => openOverlay({ mod: "compact-agents", kind: "popup", width: 200, height: 140, props: { sortMenu: true } })))
           .child(icon("settings", "settings", "Settings", () => run("app.settings")).when(Boolean(updates().app.ready), el => el.child(ready))))
         .child(icon("sidebar-toggle", "sidebar", collapsed ? "Expand" : "Collapse", toggleSidebar));
     }

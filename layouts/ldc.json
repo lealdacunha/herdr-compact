@@ -1,0 +1,186 @@
+{
+  "id": "root",
+  "cloned_from": {
+    "name": "glass",
+    "version": "0.1.18"
+  },
+  "type": "row",
+  "children": [
+    {
+      "id": "sidebar",
+      "type": "column",
+      "children": [
+        {
+          "id": "sidebar-lists",
+          "type": "column",
+          "children": [
+            {
+              "id": "spaces",
+              "type": "block",
+              "content": {
+                "mod": "ldc-spaces"
+              },
+              "size": {
+                "weight": 1
+              },
+              "min": 90
+            },
+            {
+              "id": "sidetabs",
+              "type": "block",
+              "content": {
+                "mod": "ldc-tabs",
+                "props": {
+                  "vertical": true
+                }
+              },
+              "size": {
+                "weight": 1
+              },
+              "min": 70
+            },
+            {
+              "id": "agents",
+              "type": "block",
+              "content": {
+                "mod": "ldc-agents"
+              },
+              "size": {
+                "weight": 1
+              },
+              "min": 90
+            }
+          ]
+        },
+        {
+          "id": "sidebar-footer",
+          "type": "block",
+          "content": {
+            "mod": "ldc-chrome",
+            "props": {
+              "footer": true
+            }
+          },
+          "size": {
+            "px": 40
+          },
+          "window_drag": true
+        }
+      ],
+      "size": {
+        "px": 268
+      },
+      "min": 44,
+      "max": 480,
+      "background": "chrome",
+      "resizable": false
+    },
+    {
+      "id": "work",
+      "type": "column",
+      "children": [
+        {
+          "id": "work-body",
+          "type": "row",
+          "children": [
+            {
+              "id": "main",
+              "type": "block",
+              "content": {
+                "tab": "active",
+                "pane": {
+                  "background": "canvas",
+                  "border": {
+                    "width": 1,
+                    "color": "border"
+                  },
+                  "focus": {
+                    "width": 1,
+                    "color": "border"
+                  },
+                  "radius": 0,
+                  "gap": 0
+                }
+              }
+            },
+            {
+              "id": "panel",
+              "type": "column",
+              "children": [
+                {
+                  "id": "panel-body",
+                  "type": "stack",
+                  "children": [
+                    {
+                      "id": "files",
+                      "type": "block",
+                      "content": {
+                        "mod": "files"
+                      }
+                    },
+                    {
+                      "id": "changes",
+                      "type": "block",
+                      "content": {
+                        "mod": "changes"
+                      }
+                    }
+                  ],
+                  "active": "files"
+                }
+              ],
+              "size": {
+                "px": 300
+              },
+              "min": 280,
+              "max": 900,
+              "hidden": true
+            }
+          ],
+          "background": "canvas",
+          "padding": 0,
+          "gap": 0
+        },
+        {
+          "id": "status",
+          "type": "block",
+          "content": {
+            "mod": "workspace-status"
+          },
+          "size": {
+            "px": 28
+          },
+          "hidden": true
+        }
+      ],
+      "resizable": false
+    }
+  ],
+  "background": "canvas",
+  "colors": {
+    "background": "#00000000",
+    "canvas": "#00000000",
+    "chrome": "#00000074",
+    "foreground": "#b0b0b0",
+    "popover": "#000000",
+    "raised": "#161616",
+    "selected": "#ffffff17",
+    "surface": "#00000000",
+    "border": "#ffffff14"
+  },
+  "terminal_padding": [
+    2,
+    4
+  ],
+  "terminal_opacity": 0.425,
+  "divider": {
+    "width": 1,
+    "color": "border"
+  },
+  "titlebar": "none",
+  "traffic_lights": [
+    -200,
+    -200
+  ],
+  "window_blur": true
+}

@@ -36,7 +36,7 @@ Popups and the command palette are solid black (`popover` `#000000`) with key la
   - `compact-tabs` (from `tabs`), with `props.vertical: true`: a vertical list in the sidebar; also runs `syncPanel` so the side panel stays per-space. Its horizontal mode is unused here.
   - `compact-agents` (from `agents`): no heading row; two-line rows; `#N` after the name; group headings dropped when there is one group; calls `setAgentOrder`.
   - `compact-chrome` (from `workspace-chrome`), with `props.footer: true`: the icon row; adds `square-plus.svg`. Collapsing goes to 44px since no window buttons need room.
-- Shipped mods used as-is: `files`, `changes`, `workspace-status`, `new-menu`, `menu`, `picker`. Icons come from `mods/workspace-chrome/`, `mods/pane/` and `mods/files/`.
+- Shipped mods used as-is: `files`, `changes`, `workspace-status`, `new-menu`, `menu`, `picker`. Icons not bundled in `compact-chrome` come from the shipped `mods/workspace-chrome/`, `mods/tabs/`, `mods/pane/`, `mods/files/` and `mods/changes/`.
 
 ## Watch out
 
